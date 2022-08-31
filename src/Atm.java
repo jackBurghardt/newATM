@@ -4,7 +4,7 @@ public class ATM {
 	private HashMap<Integer, Double> mappy;
 	private double deposit;
 	private int idNumber;
-	public Atm() {
+	public ATM() {
 		mappy = new HashMap <>();
 	}
 	

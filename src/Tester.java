@@ -1,7 +1,7 @@
 
 public class Tester {
 	public static void main(String[] args) {
-		Atm chase = new Atm();
+		ATM chase = new ATM();
 		// Open accounts
 		chase.openAccount(00001);
 		chase.openAccount(00002, 2500.0);
