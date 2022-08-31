@@ -7,6 +7,11 @@ public class Tester {
 	WF.openAccount (012);
 	
 	WF.openAccount (013, 100.0);
+	
+	
+	WF.closeAccount(012);
+	System.out.println(WF.checkBalance(012));
+	
 	//check to see if balances work and if initialization is correct
 	System.out.println(WF.checkBalance(012)); //should be 0.0
 	
@@ -29,5 +34,11 @@ public class Tester {
 	//check rounding 
 	WF.withdrawMoney(012, 20.2);
 	System.out.println(WF.checkBalance(012)); // Should be 69.8 
+	
+	WF.openAccount (015);
+	WF.closeAccount(015);
+	WF.closeAccount(015);
+	System.out.println(WF.checkBalance(015));
+	
 	}
 }
